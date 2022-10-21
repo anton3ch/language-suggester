@@ -115,7 +115,7 @@ window.addEventListener("load", function() {
     document.querySelector("h1").setAttribute("class", "hidden");
     hidden2.remove('hidden');
     hidden1.add("hidden");
-    document.querySelector("body").setAttribute("class", "container animate__animated animate__headShake");
+    document.querySelector("body").setAttribute("class", "container animate__animated animate__pulse");
     } else {
       document.querySelector("h1").innerText = "Please, input your name!".toUpperCase();
       document.querySelector("h1").style.color = "white";
@@ -128,19 +128,19 @@ window.addEventListener("load", function() {
   next2.addEventListener("click", function() {
     hidden3.remove('hidden');
     hidden2.add("hidden");
-    document.querySelector("body").setAttribute("class", "container animate__animated animate__bounceIn");
+    document.querySelector("body").setAttribute("class", "container animate__animated animate__swing");
   });
 
   next3.addEventListener("click", function() {
     hidden4.remove('hidden');
     hidden3.add("hidden");
-    document.querySelector("body").setAttribute("class", "container animate__animated animate__headShake");
+    document.querySelector("body").setAttribute("class", "container animate__animated animate__pulse");
   });
 
   next4.addEventListener("click", function() {
     hidden5.remove('hidden');
     hidden4.add("hidden");
-    document.querySelector("body").setAttribute("class", "container animate__animated animate__bounceIn");
+    document.querySelector("body").setAttribute("class", "container animate__animated animate__swing");
 
   });
   
@@ -151,21 +151,25 @@ window.addEventListener("load", function() {
     document.querySelector("h1").classList.add("text-center");
     document.querySelector("h1").innerText = "Welcome to the Programming Language Suggester";
     document.querySelector("h1").style.fontSize = "2em";
+    document.querySelector("body").setAttribute("class", "container animate__animated animate__shakeX");
   });
 
   back2.addEventListener("click", function() {
     hidden2.remove('hidden');
     hidden3.add("hidden");
+    document.querySelector("body").setAttribute("class", "container animate__animated animate__headShake");
   });
 
   back3.addEventListener("click", function() {
     hidden3.remove('hidden');
     hidden4.add("hidden");
+    document.querySelector("body").setAttribute("class", "container animate__animated animate__shakeX");
   });
 
   back4.addEventListener("click", function() {
     hidden4.remove('hidden');
     hidden5.add("hidden");
+    document.querySelector("body").setAttribute("class", "container animate__animated animate__headShake");
   });
 
 });
