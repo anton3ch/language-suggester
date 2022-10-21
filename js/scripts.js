@@ -25,15 +25,18 @@ window.addEventListener("load", function() {
       document.querySelector("span#insertName").innerText = name;
       document.getElementById("resultName").removeAttribute("class");
       let zodiacSelected = document.getElementById("zodiacSelect").value;
-      let research = document.querySelector("input[name='research']:checked").value;
+      
       zodiacSelected = parseInt(zodiacSelected);
       
 
       if(zodiacSelected === 1 || zodiacSelected === 4 || zodiacSelected === 7 || zodiacSelected === 10){
+
+        let research = document.querySelector("input[name='research']:checked").value;
         let experience = document.getElementById("experienceCheck").checked;
+
         if(research === "no" || research === "meh"){
           document.getElementById("html").removeAttribute("class");
-        } else if (research === "yes" || experience === false) {
+        } else if (research === "yes" && experience === false) {
           document.getElementById("css").removeAttribute("class");
           document.getElementById("html").removeAttribute("class");
         } else if (research === "yes" && experience === true) {
