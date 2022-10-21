@@ -13,9 +13,9 @@
   <h1 class="text-center">Welcome to our Programming Language Suggester</h1>
   <form>
     <div class="form-group row">
-      <label for="inputNme" class="col-sm-4 col-form-label">What's your name?</label>
+      <label for="inputName" class="col-sm-4 col-form-label">What's your name?</label>
       <div class="col-sm-8">
-        <input type="email" class="form-control" id="inputName" placeholder="Jennifer Lawrence">
+        <input type="text" class="form-control" id="inputName" placeholder="Jennifer Lawrence">
       </div>
     </div>
     <div class="form-group row col-sm-12 p-0">
@@ -85,8 +85,8 @@
       <div class="col-sm-4">Do you have programming experience?</div>
       <div class="col-sm-8">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
+          <input class="form-check-input" type="checkbox" id="experienceCheck">
+          <label class="form-check-label" for="experienceCheck">
             Yeap
           </label>
         </div>
@@ -99,19 +99,23 @@
     </div>
   </form>
 
-  <div>
+  <div id="resultName" class="text-center hidden">
+    <h3>Here's your match, <span id="insertName"></span>!</h3>
+  </div>
+
+  <div id="javascript" class="hidden card">
     <h2>JavaScript</h2>
     <img src="img/javascript.jpg" alt="javascript example">
     <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.</p>
   </div>
     
-  <div class="hidden">
+  <div id="swift" class="hidden card">
     <h2>Swift</h2>
     <img src="img/swift.png" alt="Swift example">
     <p>Apple created Swift, an open-source programming language, as a replacement for all languages based on C, including Objective C, C++, and C. The language was created in 2014 and released to the public as an open-source project in 2015 on Swift.org.</p>
   </div>
 
-  <div>
+  <div id="csharp" class="hidden card">
     <h2>C#</h2>
     <img src="img/csharp.jpeg" alt="C# example">
     <p>

@@ -7,15 +7,20 @@ html {
 
 body {
   box-sizing: border-box;
-  margin: 20px;
-  padding: 20px;
-  background-color: rgb(227, 223, 221);
+  margin: 10px;
+  padding: 10px;
+  background: rgb(201,201,201);
+  background: radial-gradient(circle, rgba(201,201,201,0.7567401960784313) 50%, rgba(153,163,164,0.7063200280112045) 100%);
+  border-radius: 10px;
+
 }
 
 h1 {
   padding: 20px;
   margin-bottom: 30px;
+  opacity: 1;
 }
+
 
 .zodiacBox {
   padding-right: 0px;
@@ -32,3 +37,21 @@ h1 {
   } 
 }
   
+
+/* Branches */
+
+.hidden {
+  display: none;
+}
+
+img {
+  display: block;
+  width: 600px;
+  margin: auto;
+}
+
+.card {
+  margin: 10px 0px;
+  padding: 20px;
+  opacity: 0.8;
+}
