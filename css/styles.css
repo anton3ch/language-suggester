@@ -12,6 +12,15 @@ body {
   background: rgb(201,201,201);
   background: radial-gradient(circle, rgba(201,201,201,0.7567401960784313) 50%, rgba(153,163,164,0.7063200280112045) 100%);
   border-radius: 10px;
+  min-height: 800px;
+  
+}
+
+.flex {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }
 
@@ -20,7 +29,7 @@ h1 {
   margin-bottom: 30px;
   opacity: 1;
   color: whitesmoke;
-  text-shadow: 3px 0px 2px rgba(38, 0, 255, 0.635);
+  text-shadow: 3px 0px 2px rgba(106, 106, 106, 0.635);
 }
 
 
@@ -33,6 +42,10 @@ h1 {
   
 }
 
+.btn {
+  margin: 20px;
+}
+
 @media only screen and (max-width: 575px) {
   #zodiacSelect {
     margin-left: 0px !important;
@@ -41,9 +54,9 @@ h1 {
 
 /* Branches */
 
-/* .hidden {
+.hidden {
   display: none;
-} */
+}
 
 img {
   display: block;
@@ -56,7 +69,7 @@ img {
   margin: 10px 0px;
   padding: 20px;
   background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,0.7035189075630253) 65%, rgba(123,121,131,0.21052170868347342) 100%);
+  background: radial-gradient(circle, rgba(255,255,255,0.7035189075630253) 65%, rgba(192, 191, 199, 0.211) 100%);
 }
 
 p {
