@@ -7,8 +7,6 @@ function hideResults() {
   document.getElementById("csharp").setAttribute("class", "hidden");
 }
 
-
-
 window.addEventListener("load", function() {
   const form = document.querySelector("form");
 
@@ -17,14 +15,14 @@ window.addEventListener("load", function() {
     hideResults();
     let catDog = document.querySelector("input[name='catDog']:checked");
     document.getElementById("hidden5").setAttribute("class", "hidden");
-        
+    let name = document.querySelector("input#inputName").value;
 
-      document.querySelector("span#insertName").innerText = name;
-      document.getElementById("resultName").removeAttribute("class");
-      let zodiacSelected = document.getElementById("zodiacSelect").value;
-      zodiacSelected = parseInt(zodiacSelected);
-      let research = document.querySelector("input[name='research']:checked").value;
-      let experience = document.getElementById("experienceCheck").checked;
+    document.querySelector("span#insertName").innerText = name;
+    document.getElementById("resultName").removeAttribute("class");
+    let zodiacSelected = document.getElementById("zodiacSelect").value;
+    zodiacSelected = parseInt(zodiacSelected);
+    let research = document.querySelector("input[name='research']:checked").value;
+    let experience = document.getElementById("experienceCheck").checked;
 
       if(zodiacSelected === 1 || zodiacSelected === 4 || zodiacSelected === 7 || zodiacSelected === 10){
 
@@ -117,6 +115,7 @@ window.addEventListener("load", function() {
     document.querySelector("h1").setAttribute("class", "hidden");
     hidden2.remove('hidden');
     hidden1.add("hidden");
+    document.querySelector("body").setAttribute("class", "container animate__animated animate__headShake");
     } else {
       document.querySelector("h1").innerText = "Please, input your name!".toUpperCase();
       document.querySelector("h1").style.color = "white";
@@ -129,21 +128,29 @@ window.addEventListener("load", function() {
   next2.addEventListener("click", function() {
     hidden3.remove('hidden');
     hidden2.add("hidden");
+    document.querySelector("body").setAttribute("class", "container animate__animated animate__bounceIn");
   });
 
   next3.addEventListener("click", function() {
     hidden4.remove('hidden');
     hidden3.add("hidden");
+    document.querySelector("body").setAttribute("class", "container animate__animated animate__headShake");
   });
 
   next4.addEventListener("click", function() {
     hidden5.remove('hidden');
     hidden4.add("hidden");
+    document.querySelector("body").setAttribute("class", "container animate__animated animate__bounceIn");
+
   });
   
   back1.addEventListener("click", function() {
     hidden1.remove('hidden');
     hidden2.add("hidden");
+    document.querySelector("h1").classList.remove("hidden");
+    document.querySelector("h1").classList.add("text-center");
+    document.querySelector("h1").innerText = "Welcome to the Programming Language Suggester";
+    document.querySelector("h1").style.fontSize = "2em";
   });
 
   back2.addEventListener("click", function() {
