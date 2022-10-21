@@ -16,9 +16,9 @@
 
   <form class="flex">
 
-    <div class="form-group row" id="hidden1">
-      <label for="inputName" class="col-sm-4 col-form-label">What's your name?</label>
-      <div class="col-sm-8">
+    <div class="form-group" id="hidden1">
+      <label for="inputName" class="col-sm-12 col-form-label"><h3>What's your name?</h3></label>
+      <div class="col-sm-12">
         <input type="text" class="form-control" id="inputName" placeholder="Jennifer Lawrence">
       </div>
       <div class="col-sm-12 text-center">
@@ -27,9 +27,9 @@
     </div>
 
     <div id="hidden2" class="hidden">
-      <div class="form-group row col-sm-12 p-0">
-        <label for="zodiacSelect" class="col-sm-4 col-form-label">What's your Zodiac?</label>
-        <div class="col-sm-8 zodiacBox">
+      <div class="form-group col-sm-12 p-0">
+        <label for="zodiacSelect" class="col-sm-12 col-form-label text-center"><h3>What's your Zodiac?</h3></label>
+        <div class="col-sm-12 zodiacBox">
           <select class="custom-select" id="zodiacSelect">
             <option value="1">Aries</option>
             <option value="2">Taurus</option>
@@ -58,21 +58,19 @@
 
     <div id="hidden3" class="hidden">
       <fieldset class="form-group">
-        <div class="row">
-          <legend class="col-form-label col-sm-4 pt-0">Cats or Dogs?</legend>
-          <div class="col-sm-8">
-            <div class="form-check-inline">
-              <input class="form-check-input" type="radio" name="catDog" id="catradio" value="cat" checked>
-              <label class="form-check-label" for="catradio">
-                Cats
-              </label>
-            </div>
-            <div class="form-check-inline" id="dogHover">
-              <input class="form-check-input" type="radio" name="catDog" id="dogradio" value="dog">
-              <label class="form-check-label" for="gridRadio">
-                <span id="dogRadioLabel">Dogs
-              </label>
-            </div>
+        <legend class="col-form-label col-sm-12 pt-0 text-center"><h3>Cats or Dogs?</h3></legend>
+        <div class="col-sm-12 text-center">
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="catDog" id="catradio" value="cat" checked>
+            <label class="form-check-label" for="catradio">
+              Cats
+            </label>
+          </div>
+          <div class="form-check-inline" id="dogHover">
+            <input class="form-check-input" type="radio" name="catDog" id="dogradio" value="dog">
+            <label class="form-check-label" for="gridRadio">
+              <span id="dogRadioLabel">Dogs
+            </label>
           </div>
         </div>
       </fieldset>
@@ -87,34 +85,32 @@
     </div>
 
     <div id="hidden4" class="hidden">
-      <fieldset class="form-group">
-        <div class="row">
-          <legend class="col-form-label col-sm-4 pt-0">Are you proficient in secondary research?</legend>
-          <div class="col-sm-8" id="research">
-            <div class="form-check-inline">
-              <input class="form-check-input" type="radio" name="research" id="researchYes" value="yes" checked>
-              <label class="form-check-label" for="researchYes">
-                Yes
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <input class="form-check-input" type="radio" name="research" id="researchNo" value="no">
-              <label class="form-check-label" for="researchNo">
-                No
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <input class="form-check-input" type="radio" name="research" id="researchMeh" value="meh">
-              <label class="form-check-label" for="researchMeh">
-                Meh
-              </label>
-            </div>
+      <fieldset class="form-group text-center">
+        <legend class="col-form-label col-sm-12 pt-0"><h3>Are you proficient in secondary research?</h3></legend>
+        <div class="col-sm-12" id="research">
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="research" id="researchYes" value="yes" checked>
+            <label class="form-check-label" for="researchYes">
+              Yes
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="research" id="researchNo" value="no">
+            <label class="form-check-label" for="researchNo">
+              No
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="research" id="researchMeh" value="meh">
+            <label class="form-check-label" for="researchMeh">
+              Meh
+            </label>
           </div>
         </div>
       </fieldset>
-      <div class="form-group row col-sm-12">
+      <div class="form-group row col-sm-12 text-center">
         <div class="col-sm-6 text-center">
-          <button type="button" class="btn btn-secondary" id="back4">Back</button>
+          <button type="button" class="btn btn-secondary" id="back3">Back</button>
         </div>
         <div class="col-sm-6 text-center">
           <button type="button" class="btn btn-secondary" id="next4">Next</button>
@@ -123,23 +119,22 @@
     </div>
 
     <div id="hidden5" class="hidden">
-      <div class="form-group row">
-        <div class="col-sm-4">Do you have programming experience?</div>
-        <div class="col-sm-8">
-          <div class="form-check">
+      <div class="">
+        <div class="col-sm-12 text-center"><h3>Do you have programming experience?</h3></div>
+        <div class="col-sm-12 text-center">
+          <div class="form-check text-center">
             <input class="form-check-input" type="checkbox" id="experienceCheck">
             <label class="form-check-label" for="experienceCheck">
               Yeap
             </label>
-          </div>
         </div>
       </div>
-      <div class="form-group row col-sm-12">
+      <div class="form-group row col-sm-12 text-center">
         <div class="col-sm-6 text-center">
-          <button type="button" class="btn btn-secondary" id="back5">Back</button>
+          <button type="button" class="btn btn-secondary" id="back4">Back</button>
         </div>
         <div class="col-sm-6 text-center">
-            <button type="submit" class="btn btn-primary">Get my result</button>
+          <button type="submit" class="btn btn-primary">Get my result</button>
         </div>
       </div>
     </div>

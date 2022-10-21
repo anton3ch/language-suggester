@@ -17,7 +17,7 @@ body {
 
 .flex {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -30,18 +30,12 @@ h1 {
   text-shadow: 3px 0px 2px rgba(106, 106, 106, 0.635);
 }
 
-
-.zodiacBox {
-  padding-right: 0px;
-}
-
-#zodiacSelect {
-  margin-left: 10px;
-  
+div.form-check.text-center {
+  padding: 0;
 }
 
 .btn {
-  margin: 20px;
+  margin: 20px !important;
 }
 
 @media only screen and (max-width: 575px) {
@@ -54,7 +48,7 @@ h1 {
 
 .hidden {
   display: none;
-}
+} 
 
 img {
   display: block;

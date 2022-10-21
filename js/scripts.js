@@ -16,6 +16,8 @@ window.addEventListener("load", function() {
     event.preventDefault();
     hideResults();
     let catDog = document.querySelector("input[name='catDog']:checked");
+    document.getElementById("hidden5").setAttribute("class", "hidden");
+        
 
       document.querySelector("span#insertName").innerText = name;
       document.getElementById("resultName").removeAttribute("class");
@@ -97,10 +99,10 @@ window.addEventListener("load", function() {
   const next3 = document.getElementById("next3");
   const next4 = document.getElementById("next4");
   const back1 = document.getElementById("back1");
-  const back2 = document.getElementById("back1");
-  const back3 = document.getElementById("back1");
-  const back4 = document.getElementById("back1");
-  const back5 = document.getElementById("back1");
+  const back2 = document.getElementById("back2");
+  const back3 = document.getElementById("back3");
+  const back4 = document.getElementById("back4");
+  const back5 = document.getElementById("back5");
 
   const hidden1 = document.getElementById("hidden1").classList;
   const hidden2 = document.getElementById("hidden2").classList;
@@ -112,6 +114,7 @@ window.addEventListener("load", function() {
   next1.addEventListener("click", function() {
     let name = document.querySelector("input#inputName").value;
     if (name) {
+    document.querySelector("h1").setAttribute("class", "hidden");
     hidden2.remove('hidden');
     hidden1.add("hidden");
     } else {
@@ -122,11 +125,6 @@ window.addEventListener("load", function() {
       document.querySelector("h1").setAttribute("class", "text-center animate__animated animate__flash");
     };
   }); 
-  
-  back1.addEventListener("click", function() {
-    hidden1.remove('hidden');
-    hidden2.add("hidden");
-  });
 
   next2.addEventListener("click", function() {
     hidden3.remove('hidden');
@@ -142,6 +140,11 @@ window.addEventListener("load", function() {
     hidden5.remove('hidden');
     hidden4.add("hidden");
   });
+  
+  back1.addEventListener("click", function() {
+    hidden1.remove('hidden');
+    hidden2.add("hidden");
+  });
 
   back2.addEventListener("click", function() {
     hidden2.remove('hidden');
@@ -154,11 +157,6 @@ window.addEventListener("load", function() {
   });
 
   back4.addEventListener("click", function() {
-    hidden4.remove('hidden');
-    hidden5.add("hidden");
-  });
-
-  back5.addEventListener("click", function() {
     hidden4.remove('hidden');
     hidden5.add("hidden");
   });
