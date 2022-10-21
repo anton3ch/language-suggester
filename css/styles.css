@@ -19,7 +19,8 @@ h1 {
   padding: 20px;
   margin-bottom: 30px;
   opacity: 1;
-  color: -webkit-linear-gradient(166deg, rgba(232,85,85,1) 0%, rgba(61,46,150,1) 100%)";
+  color: whitesmoke;
+  text-shadow: 3px 0px 2px rgba(38, 0, 255, 0.635);
 }
 
 
@@ -36,23 +37,43 @@ h1 {
   #zodiacSelect {
     margin-left: 0px !important;
   } 
-}
-  
+} 
 
 /* Branches */
 
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
 
 img {
   display: block;
   width: 600px;
   margin: auto;
+  padding: 10px 10px 30px 10px;
 }
 
 .card {
   margin: 10px 0px;
   padding: 20px;
-  opacity: 0.8;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,0.7035189075630253) 65%, rgba(123,121,131,0.21052170868347342) 100%);
+}
+
+p {
+  padding: 0 6em;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+h3 {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  img {
+    max-width: 400px;
+  }
 }
