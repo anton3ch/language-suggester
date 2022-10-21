@@ -1,0 +1,18 @@
+html {
+  background-color: antiquewhite;
+  background: rgb(232,85,85);
+  background: radial-gradient(circle, rgba(232,85,85,1) 0%, rgba(61,46,150,1) 100%);
+
+}
+
+body {
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(227, 223, 221);
+}
+
+h1 {
+  padding: 20px;
+  margin-bottom: 30px;
+}

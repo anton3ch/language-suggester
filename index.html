@@ -4,12 +4,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css.bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/scripts.js"></script>
-  <title>Document</title>
+  <title>Programming Language Suggester</title>
 </head>
-<body>
+<body class="container">
+  <h1 class="text-center">Welcome to our Programming Language Suggester</h1>
+  <form>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-4 col-form-label">What's your name?</label>
+      <div class="col-sm-8">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Jennifer Lawrence">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-4 col-form-label">Password</label>
+      <select class="form-control col-sm-8">
+        <option>Aries</option>
+        <option>Taurus</option>
+        <option>Gemini</option>
+        <option>Cancer</option>
+        <option>Leo</option>
+        <option>Virgo</option>
+        <option>Libra</option>
+        <option>Scorpio</option>
+        <option>Sagittarius</option>
+        <option>Capricorn</option>
+        <option>Aquarius</option>
+        <option>Pisces</option>
+      </select>
+    </div>
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-4 pt-0">Cats or Dogs?</legend>
+        <div class="col-sm-8">
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="catdog" id="catradio" value="cat" checked>
+            <label class="form-check-label" for="gridRadios1">
+              Cats
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="catdog" id="dogradio" value="dog">
+            <label class="form-check-label" for="gridRadios2">
+              Dogs
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-group row">
+      <div class="col-sm-4">Do you have programming experience?</div>
+      <div class="col-sm-8">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck1">
+          <label class="form-check-label" for="gridCheck1">
+            Yeap
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Get my result</button>
+      </div>
+    </div>
+  </form>
   
 </body>
 </html>
