@@ -7,17 +7,16 @@ function hideResults() {
   document.getElementById("csharp").setAttribute("class", "hidden");
 }
 
+
+
 window.addEventListener("load", function() {
   const form = document.querySelector("form");
 
   form.addEventListener("submit", function(event){
     event.preventDefault();
     hideResults();
-    let name = document.querySelector("input#inputName").value;
     let catDog = document.querySelector("input[name='catDog']:checked");
 
-    if (name) {
-      
       document.querySelector("span#insertName").innerText = name;
       document.getElementById("resultName").removeAttribute("class");
       let zodiacSelected = document.getElementById("zodiacSelect").value;
@@ -80,14 +79,6 @@ window.addEventListener("load", function() {
           document.getElementById("css").setAttribute("class", "text-center animate__animated animate__zoomIn");
         }
       }
-
-    } else {
-      document.querySelector("h1").innerText = "Please, input your name!".toUpperCase();
-      document.querySelector("h1").style.color = "white";
-      document.querySelector("h1").style.fontSize = "4em";
-      document.querySelector("h1").style.textShadow = "2px 2px 2px gray";
-      document.querySelector("h1").setAttribute("class", "text-center animate__animated animate__flash");
-    }
   });
 
   const selectedDog = document.getElementById("dogRadioLabel");
@@ -99,4 +90,77 @@ window.addEventListener("load", function() {
   dogHover.addEventListener("mouseout", function() {
     selectedDog.innerText = "Dogs";
   });
+
+
+  const next1 = document.getElementById("next1");
+  const next2 = document.getElementById("next2");
+  const next3 = document.getElementById("next3");
+  const next4 = document.getElementById("next4");
+  const back1 = document.getElementById("back1");
+  const back2 = document.getElementById("back1");
+  const back3 = document.getElementById("back1");
+  const back4 = document.getElementById("back1");
+  const back5 = document.getElementById("back1");
+
+  const hidden1 = document.getElementById("hidden1").classList;
+  const hidden2 = document.getElementById("hidden2").classList;
+  const hidden3 = document.getElementById("hidden3").classList;
+  const hidden4 = document.getElementById("hidden4").classList;
+  const hidden5 = document.getElementById("hidden5").classList;
+
+  
+  next1.addEventListener("click", function() {
+    let name = document.querySelector("input#inputName").value;
+    if (name) {
+    hidden2.remove('hidden');
+    hidden1.add("hidden");
+    } else {
+      document.querySelector("h1").innerText = "Please, input your name!".toUpperCase();
+      document.querySelector("h1").style.color = "white";
+      document.querySelector("h1").style.fontSize = "4em";
+      document.querySelector("h1").style.textShadow = "2px 2px 2px gray";
+      document.querySelector("h1").setAttribute("class", "text-center animate__animated animate__flash");
+    };
+  }); 
+  
+  back1.addEventListener("click", function() {
+    hidden1.remove('hidden');
+    hidden2.add("hidden");
+  });
+
+  next2.addEventListener("click", function() {
+    hidden3.remove('hidden');
+    hidden2.add("hidden");
+  });
+
+  next3.addEventListener("click", function() {
+    hidden4.remove('hidden');
+    hidden3.add("hidden");
+  });
+
+  next4.addEventListener("click", function() {
+    hidden5.remove('hidden');
+    hidden4.add("hidden");
+  });
+
+  back2.addEventListener("click", function() {
+    hidden2.remove('hidden');
+    hidden3.add("hidden");
+  });
+
+  back3.addEventListener("click", function() {
+    hidden3.remove('hidden');
+    hidden4.add("hidden");
+  });
+
+  back4.addEventListener("click", function() {
+    hidden4.remove('hidden');
+    hidden5.add("hidden");
+  });
+
+  back5.addEventListener("click", function() {
+    hidden4.remove('hidden');
+    hidden5.add("hidden");
+  });
+
 });
