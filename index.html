@@ -43,14 +43,14 @@
         <div class="col-sm-8">
           <div class="form-check-inline">
             <input class="form-check-input" type="radio" name="catDog" id="catradio" value="cat" checked>
-            <label class="form-check-label" for="gridRadios1">
+            <label class="form-check-label" for="catradio">
               Cats
             </label>
           </div>
-          <div class="form-check-inline">
+          <div class="form-check-inline" id="dogHover">
             <input class="form-check-input" type="radio" name="catDog" id="dogradio" value="dog">
-            <label class="form-check-label" for="gridRadios2" id="dogradioLabel">
-              Dogs
+            <label class="form-check-label" for="gridRadio">
+              <span id="dogRadioLabel">Dogs
             </label>
           </div>
         </div>
@@ -61,19 +61,19 @@
         <legend class="col-form-label col-sm-4 pt-0">Are you proficient in secondary research?</legend>
         <div class="col-sm-8">
           <div class="form-check-inline">
-            <input class="form-check-input" type="radio" name="research" id="researchYes" value="cat" checked>
+            <input class="form-check-input" type="radio" name="research" id="researchYes" value="yes" checked>
             <label class="form-check-label" for="researchYes">
               Yes
             </label>
           </div>
           <div class="form-check-inline">
-            <input class="form-check-input" type="radio" name="research" id="researchNo" value="dog">
+            <input class="form-check-input" type="radio" name="research" id="researchNo" value="no">
             <label class="form-check-label" for="researchNo">
               No
             </label>
           </div>
           <div class="form-check-inline">
-            <input class="form-check-input" type="radio" name="research" id="researchMeh" value="dog">
+            <input class="form-check-input" type="radio" name="research" id="researchMeh" value="meh">
             <label class="form-check-label" for="researchMeh">
               Meh
             </label>
@@ -103,23 +103,45 @@
     <h3 class="text-center">Here's your match, <span id="insertName">___</span>!</h3>
   </div>
 
-  <div id="javascript" class="hidden card">
-    <h2>JavaScript</h2>
-    <img src="img/javascript.jpg" alt="javascript example">
-    <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.</p>
-  </div>
-    
-  <div id="swift" class="hidden card">
-    <h2>Swift</h2>
-    <img src="img/swift.png" alt="Swift example">
-    <p>Apple created Swift, an open-source programming language, as a replacement for all languages based on C, including Objective C, C++, and C. The language was created in 2014 and released to the public as an open-source project in 2015 on Swift.org.</p>
+  <div id="html" class="hidden">
+    <div class="card">
+      <h2>HTML</h2>
+      <img src="img/html.jpg" alt="HTML example">
+      <p>HTML (HyperText Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.</p>
+    </div>
   </div>
 
-  <div id="csharp" class="hidden card">
-    <h2>C#</h2>
-    <img src="img/csharp.jpeg" alt="C# example">
-    <p>
-      What is C# used for? Like other general-purpose programming languages, C# can be used to create a number of different programs and applications: mobile apps, desktop apps, cloud-based services, websites, enterprise software and games. Lots and lots of games.</p>
+  <div id="css" class="hidden">
+    <div class="card">
+      <h2>HTML</h2>
+      <img src="img/html.jpg" alt="HTML example">
+      <p>HTML (HyperText Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.</p>
+    </div>
+  </div>
+
+  <div id="javascript" class="hidden">
+    <div class="card">
+      <h2>JavaScript</h2>
+      <img src="img/javascript.jpg" alt="javascript example">
+      <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.</p>
+    </div>
+  </div>
+    
+  <div id="swift" class="hidden">
+    <div class="card">
+      <h2>Swift</h2>
+     <img src="img/swift.png" alt="Swift example">
+      <p>Apple created Swift, an open-source programming language, as a replacement for all languages based on C, including Objective C, C++, and C. The language was created in 2014 and released to the public as an open-source project in 2015 on Swift.org.</p>
+    </div>
+  </div>
+
+  <div id="csharp" class="hidden">
+    <div class="card">
+      <h2>C#</h2>
+      <img src="img/csharp.jpeg" alt="C# example">
+      <p>
+        What is C# used for? Like other general-purpose programming languages, C# can be used to create a number of different programs and applications: mobile apps, desktop apps, cloud-based services, websites, enterprise software and games. Lots and lots of games.</p>
+    </div>
   </div>
   
 </body>
