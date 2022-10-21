@@ -13,7 +13,6 @@ window.addEventListener("load", function() {
   form.addEventListener("submit", function(event){
     event.preventDefault();
     hideResults();
-    let catDog = document.querySelector("input[name='catDog']:checked");
     document.getElementById("hidden5").setAttribute("class", "hidden");
     let name = document.querySelector("input#inputName").value;
 
@@ -100,7 +99,6 @@ window.addEventListener("load", function() {
   const back2 = document.getElementById("back2");
   const back3 = document.getElementById("back3");
   const back4 = document.getElementById("back4");
-  const back5 = document.getElementById("back5");
 
   const hidden1 = document.getElementById("hidden1").classList;
   const hidden2 = document.getElementById("hidden2").classList;
@@ -122,7 +120,7 @@ window.addEventListener("load", function() {
       document.querySelector("h1").style.fontSize = "4em";
       document.querySelector("h1").style.textShadow = "2px 2px 2px gray";
       document.querySelector("h1").setAttribute("class", "text-center animate__animated animate__flash");
-    };
+    }
   }); 
 
   next2.addEventListener("click", function() {
