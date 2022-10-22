@@ -36,7 +36,7 @@ div.form-check.text-center {
 }
 
 .btn {
-  margin: 20px !important;
+  margin: 20px 0px 20px 0px !important;
 }
 
 @media only screen and (max-width: 575px) {
@@ -53,7 +53,8 @@ div.form-check.text-center {
 
 img {
   display: block;
-  width: 600px;
+  box-sizing: border-box;
+  max-width: 600px;
   margin: auto;
   padding: 10px 10px 30px 10px;
 }
@@ -80,6 +81,8 @@ h3 {
 
 @media only screen and (max-width: 768px) {
   img {
-    max-width: 350px;
+    max-width: 300px;
+    padding: 0%;
+    
   }
 }
