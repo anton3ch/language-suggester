@@ -115,6 +115,7 @@ window.addEventListener("load", function() {
       document.querySelector("h1").style.fontSize = "3em";
       document.querySelector("h1").style.textShadow = "2px 2px 2px gray";
       document.querySelector("h1").setAttribute("class", "text-center animate__animated animate__flash");
+      document.querySelector("body").setAttribute("class", "container animate__animated animate__shakeX");
     }
   }); 
 
