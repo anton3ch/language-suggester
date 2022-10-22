@@ -9,13 +9,11 @@ function hideResults() {
 
 window.addEventListener("load", function() {
   const form = document.querySelector("form");
-
   form.addEventListener("submit", function(event){
     event.preventDefault();
     hideResults();
     document.getElementById("hidden5").setAttribute("class", "hidden");
     let name = document.querySelector("input#inputName").value;
-
     document.querySelector("span#insertName").innerText = name;
     document.getElementById("resultName").removeAttribute("class");
     let zodiacSelected = document.getElementById("zodiacSelect").value;
@@ -59,7 +57,6 @@ window.addEventListener("load", function() {
           document.getElementById("css").setAttribute("class", "text-center animate__animated animate__zoomIn");
         }
 
-
       } else if(zodiacSelected === 3 || zodiacSelected === 6 || zodiacSelected === 9 || zodiacSelected === 12) {
         
         if (research === "yes" && experience === false) {
@@ -90,7 +87,6 @@ window.addEventListener("load", function() {
     selectedDog.innerText = "Dogs";
   });
 
-
   const next1 = document.getElementById("next1");
   const next2 = document.getElementById("next2");
   const next3 = document.getElementById("next3");
@@ -106,7 +102,6 @@ window.addEventListener("load", function() {
   const hidden4 = document.getElementById("hidden4").classList;
   const hidden5 = document.getElementById("hidden5").classList;
 
-  
   next1.addEventListener("click", function() {
     let name = document.querySelector("input#inputName").value;
     if (name) {
@@ -139,7 +134,6 @@ window.addEventListener("load", function() {
     hidden5.remove('hidden');
     hidden4.add("hidden");
     document.querySelector("body").setAttribute("class", "container animate__animated animate__swing");
-
   });
   
   back1.addEventListener("click", function() {
@@ -169,5 +163,4 @@ window.addEventListener("load", function() {
     hidden5.add("hidden");
     document.querySelector("body").setAttribute("class", "container animate__animated animate__headShake");
   });
-
 });
