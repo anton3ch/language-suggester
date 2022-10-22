@@ -112,7 +112,7 @@ window.addEventListener("load", function() {
     } else {
       document.querySelector("h1").innerText = "Please, input your name!".toUpperCase();
       document.querySelector("h1").style.color = "white";
-      document.querySelector("h1").style.fontSize = "4em";
+      document.querySelector("h1").style.fontSize = "3em";
       document.querySelector("h1").style.textShadow = "2px 2px 2px gray";
       document.querySelector("h1").setAttribute("class", "text-center animate__animated animate__flash");
     }
