@@ -164,4 +164,17 @@ window.addEventListener("load", function() {
     hidden5.add("hidden");
     document.querySelector("body").setAttribute("class", "container animate__animated animate__headShake");
   });
+
+  const reset = this.document.getElementById("reset");
+
+  reset.addEventListener("click", function(){
+    hideResults();
+    hidden1.remove('hidden');
+    hidden2.add("hidden");
+    document.querySelector("h1").classList.remove("hidden");
+    document.querySelector("h1").classList.add("text-center");
+    document.querySelector("h1").innerText = "Welcome to the Programming Language Suggester";
+    document.querySelector("h1").style.fontSize = "2em";
+    document.querySelector("body").setAttribute("class", "container animate__animated animate__shakeX");
+  });
 });

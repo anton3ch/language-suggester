@@ -83,6 +83,13 @@ div.form-group {
   margin: 0px;
 }
 
+#reset {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   img {
     max-width: 300px;
