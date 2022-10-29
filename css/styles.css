@@ -2,12 +2,11 @@ html {
   background-color: antiquewhite;
   background: rgb(232,85,85);
   background: radial-gradient(circle, rgba(232,85,85,1) 0%, rgba(61,46,150,1) 100%);
-
 }
 
 body {
   box-sizing: border-box;
-  margin: 10px;
+  margin: 50px;
   padding: 10px;
   background: rgb(201,201,201);
   background: radial-gradient(circle, rgba(201,201,201,0.7567401960784313) 50%, rgba(153,163,164,0.7063200280112045) 100%);
